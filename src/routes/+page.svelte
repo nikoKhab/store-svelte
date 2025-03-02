@@ -1,21 +1,18 @@
 <script>
-
 	let { data } = $props()
     console.log(data)
     // products = data.data
     console.log(data.data)
     const products = data.data
-
 </script>
-
 <main>
     <ul>
         {#each products as product}
         <article class="product-card">
             <img class="product-image" src={product.image} alt="">
             <h2 class="product-title">{product.title}</h2>
-            <p class="product-price">{product.price}</p>
-            <a href="/product"><button class="product-button">view more</button></a>
+            <p class="product-price">${product.price}</p>
+            <a href={`/product/${product.id}`}><button class="product-button">view more</button></a>
         </article>
             
         {/each}
