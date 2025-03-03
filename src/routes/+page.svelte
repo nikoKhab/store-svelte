@@ -16,18 +16,19 @@
         </article>
             
         {/each}
-    </ul>
-</main>
+        </ul>
+    </main>
 
-<style scoped>
-    *{
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-    ul{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+    <style scoped>
+        *{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        ul{
+            display: grid;
+            grid-template-columns: repeat(2,600px);
+            margin-left: 160px;
+            grid-template-rows: repeat(3, auto);
+            
     }
     .product-card{
         width: 500px;
